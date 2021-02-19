@@ -1,7 +1,5 @@
-body {
-    background-image: url('https://cdn.pixabay.com/photo/2016/12/20/22/09/beach-1921598_960_720.jpg');
-    background-repeat: no-repeat;
-
+.App {
+    margin: 0;
 }
 .Form{
     background-color:rgb(180, 220, 243);
@@ -19,6 +17,11 @@ body {
 .Main{
     display: flex;
     flex-direction: column;
-    margin: 5em;
+    margin: 3em;
     justify-content: center;
+    font-family: "Montserrat", "sans-serif";
+    font-size: large;
+}
+.Main h2{
+    text-align: center;
 }

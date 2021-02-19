@@ -16,11 +16,15 @@ const useStyles = makeStyles((theme) => ({
 
 export default function GroupSizesColors() {
   const classes = useStyles();
-
+  let x = 0;
+  function clickFunction() {
+    x++;
+    console.log(x, Date().toLocaleString());
+  }
   return (
     <div className={classes.root}>
-      <ButtonGroup size="large" color="primary" aria-label="large outlined primary button group">
-        <Button>Consentimiento informado</Button>
+      <ButtonGroup onClick={clickFunction} size="large" color="primary" aria-label="large outlined primary button group">
+        <Button>Acepto</Button>
       </ButtonGroup>
     </div>
   );

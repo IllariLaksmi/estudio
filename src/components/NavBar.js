@@ -17,10 +17,9 @@ const useStyles = makeStyles((theme) => ({
   bar: {
     background: '#2CCDBE',
     borderRadius: 3,
-    border: 0,
-    fontFamily: 'Prompt',
+    margin: 0,
     color: 'white',
-    fontWeight: 'bold',
+    fontWeight: 'bolder',
     textAlign: 'center',
   }
 }));
@@ -32,7 +31,7 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar className={classes.bar} position="static">
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h4" className={classes.title}>
           Estudio de ciudadania sexual de la mujer peruana
           </Typography>
           </Toolbar>
