@@ -2,6 +2,11 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { makeStyles } from '@material-ui/core/styles';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+
+const firestore = () => firebase.firestore();
+const db = firestore;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,10 +21,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function GroupSizesColors() {
   const classes = useStyles();
-  let x = 0;
   function clickFunction() {
-    x++;
-    console.log(x, Date().toLocaleString());
+    let data = Date().toLocaleString();
+    db().collection('consentimiento').doc().set(data)
+    .then((response) => console.log(response))
+    .catch((error) => console.log('Hubo un error', error));
   }
   return (
     <div className={classes.root}>
