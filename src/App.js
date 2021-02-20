@@ -1,11 +1,7 @@
 import "./App.css";
 import React from "react";
 import NavBar from "./components/NavBar";
-import Description from "./components/Description";
 import Buttons from "./components/Buttons";
-import DateTime from "./components/DateTime";
-import UploadButtons from "./components/UploadButtons";
-import NameInput from "./components/NameInput";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 
