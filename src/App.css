@@ -25,3 +25,24 @@
 .Main h2{
     text-align: center;
 }
+.navBar h1 {
+    font-family: "Montserrat","sans-serif";
+    text-align: center;
+    font-weight: 400;
+}
+
+#women {
+    width: 25em;
+    height: 12em;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 700px){
+
+    #women {
+        width: 15em;
+        height: 8em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

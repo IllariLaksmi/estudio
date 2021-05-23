@@ -13,14 +13,20 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    fontSize: '200%',
   },
   bar: {
-    background: '#2CCDBE',
-    borderRadius: 3,
+    background: 'linear-gradient(90deg,#ff0063,#d17899 50%,#ff00ce)',
+    display: 'flex',
+    borderRadius: '20px',
     margin: 0,
     color: 'white',
     fontWeight: 'bolder',
+    flexDirection: 'column',
+    justifyContent:'center',
     textAlign: 'center',
+    padding:'8px',
+    boxShadow: '5px 5px 15px 5px #e01d94'
   }
 }));
 
@@ -32,7 +38,7 @@ export default function ButtonAppBar() {
       <AppBar className={classes.bar} position="static">
         <Toolbar>
           <Typography variant="h4" className={classes.title}>
-          Estudio de ciudadania sexual de la mujer peruana
+         ESTUDIO DE CIUDADANÍA SEXUAL DE LA MUJER PERUANA
           </Typography>
           </Toolbar>
       </AppBar>
