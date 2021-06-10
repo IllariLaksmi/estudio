@@ -9,4 +9,3 @@ ReactDOM.render(
     </FirebaseAppProvider>),
   document.getElementById('root')
 );
-
