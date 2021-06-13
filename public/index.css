@@ -1,0 +1,105 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.App {
+  margin: 0;
+}
+.App1{
+  text-align: center;
+}
+.navBar{
+  width: 95%;
+  line-height: 70px;
+  height: 70px;
+  background: linear-gradient(90deg,#ff0063,#d17899 50%,#ff00ce);
+  display: 'flex';
+  border-radius: 20px;
+  margin: 0;
+  color: white;
+  font-weight: 400;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  padding:8px;
+  box-shadow: 5px 5px 15px 5px #e01d94;
+  margin-left: auto;
+  font-size: 200%;
+  margin-right: auto;
+}
+
+.App-spacer {
+  width: 0;
+  height: 0;
+  margin-top: 100px;
+}
+
+.App-container {
+  background: #282c34;
+  padding: 60px 20px;
+}
+
+.App-embed {
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+}
+.Form{
+  background-color:rgb(180, 220, 243);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30em;
+}
+.Description{
+  width: 50em;
+  border-radius: 20px;
+  color:rgb(0, 0, 0);
+  background-color: #2CCDBE;
+}
+.header{
+  text-align: center;
+}
+.buttonDiv{
+  display: flex;
+  justify-content: center;
+}
+.Main{
+  width: 80%;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Montserrat", "sans-serif";
+  font-size: large;
+  word-break: break-word;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.Main h2{
+  text-align: center;
+}
+.navBar h1 {
+  font-family: "Montserrat","sans-serif";
+  text-align: center;
+  font-weight: 400;
+}
+
+#women {
+  margin-top: 40px;
+  width: 25em;
+  height: 12em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 700px){
+
+  #women {
+      width: 15em;
+      height: 8em;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}

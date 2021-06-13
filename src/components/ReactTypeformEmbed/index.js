@@ -47,7 +47,7 @@ class ReactTypeformEmbed extends Component {
       const elm = this.typeformElm;
 
       // Load Typeform embed widget
-      typeformEmbed.createWidget(elm, url, options);
+      typeformEmbed.makeWidget(elm, url, options);
     }
   }
 

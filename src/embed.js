@@ -1,37 +1,23 @@
-import React from 'react';
-import { ReactTypeformEmbed } from './components';
+import "./App.css";
+import React from "react";
+import * as typeformEmbed from '@typeform/embed'
+import "@typeform/embed/build/css/widget.css";
 
-class ExamplePopup extends React.Component {
-  constructor(props) {
-    super(props);
-    this.openForm = this.openForm.bind(this);
-  }
 
-  openForm() {
-    this.typeformEmbed.typeform.open();
-  }
+class Series extends React.Component {
+    componentDidMount(){
+      const popup1 = typeformEmbed.createPopup('eenVetHr')
+      document.getElementById('bt-popup').addEventListener('click', function(){
+        popup1.toggle()
+      })
+    }
+    render(){
+      return (
+        <div>
+          <button id='bt-popup' className='my-button'>Click</button>
+        </div>
+      )
 
-  render() {
-    return (
-      <div className="ExamplePopup">
-        <ReactTypeformEmbed
-          popup
-          autoOpen={false}
-          url="https://demo.typeform.com/to/njdbt5"
-          hideHeaders
-          hideFooter
-          buttonText="Go!"
-          style={{ top: 100 }}
-          ref={tf => {
-            this.typeformEmbed = tf;
-          }}
-        />
-        <button className="btn" onClick={this.openForm} style={{ cursor: 'pointer' }}>
-          Click to open the popup!
-        </button>
-      </div>
-    );
-  }
+    }
 }
-
-export default ExamplePopup;
+export default Series;
