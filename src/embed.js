@@ -1,23 +1,14 @@
-import "./App.css";
-import React from "react";
-import * as typeformEmbed from '@typeform/embed'
-import "@typeform/embed/build/css/widget.css";
+import { FirestoreProvider } from "@react-firebase/firestore";
+// Before
+const App = () => {
+  return <div>This is my app</div>;
+};
 
-
-class Series extends React.Component {
-    componentDidMount(){
-      const popup1 = typeformEmbed.createPopup('eenVetHr')
-      document.getElementById('bt-popup').addEventListener('click', function(){
-        popup1.toggle()
-      })
-    }
-    render(){
-      return (
-        <div>
-          <button id='bt-popup' className='my-button'>Click</button>
-        </div>
-      )
-
-    }
-}
-export default Series;
+// After
+const App = () => {
+  return (
+    <FirestoreProvider {...config} firebase={firebase}>
+      <div>This is my app</div>
+    </FirestoreProvider>
+  );
+};
