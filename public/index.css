@@ -7,6 +7,11 @@ body {
 .App1{
   text-align: center;
 }
+#response {
+  display: none;
+  margin-top: 40px;
+  text-align: center;
+}
 .navBar{
   width: 95%;
   line-height: 70px;

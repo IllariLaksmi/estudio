@@ -12,7 +12,14 @@ const onCreate = () => {
   const db = firebase.firestore();
   let data = Date().toLocaleString();
   db.collection('consentimiento').add({data})
-  .then((response) => console.log(response))
+  .then((response) => 
+  {console.log(response);
+    document.getElementById('main').style.display = 'none';
+    document.getElementById('button').style.display = 'none';
+    document.getElementById('response').style.display = 'block';
+  }
+  )
+
 };
 // We can inject some CSS into the DOM.
 const styles = {
@@ -32,7 +39,7 @@ const styles = {
   return (
     <div className='buttonDiv' >
 
-       <Button className={clsx(classes.root, className)} {...other} onClick={onCreate}>ACEPTO Y DOY MI CONSENTIMIENTO</Button>
+       <Button id='button' className={clsx(classes.root, className)} {...other} onClick={onCreate}>ACEPTO Y DOY MI CONSENTIMIENTO</Button>
     </div>
   );
 }
