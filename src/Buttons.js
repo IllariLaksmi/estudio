@@ -22,7 +22,6 @@ const onCreate = () => {
       document.getElementById('response').style.display = 'block';
     }
     )
-
 };
 // We can inject some CSS into the DOM.
 const styles = {
