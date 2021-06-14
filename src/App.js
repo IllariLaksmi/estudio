@@ -14,12 +14,9 @@ const theme = createMuiTheme({
 
 
 function App() {
-  const firebaseApp = firebase.apps[0];
+
   return (
     <div className="App">
-            <code>
-        <pre>{JSON.stringify(firebaseApp.options, null, 2)}</pre>
-      </code>
       <ThemeProvider theme={theme}>
         <Buttons id='button' />
       </ThemeProvider>
