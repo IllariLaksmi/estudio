@@ -12,6 +12,12 @@ body {
   margin-top: 40px;
   text-align: center;
 }
+.interview{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+}
 .navBar{
   width: 95%;
   line-height: 70px;
